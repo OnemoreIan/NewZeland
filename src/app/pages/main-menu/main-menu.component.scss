@@ -1,65 +1,191 @@
 $back: #f5f5f5;
-*{
+$fontToh2: 2rem;
+$borderTable: 5px;
+
+* {
   color: rgb(28, 28, 28);
 }
-.exa{
-  border: 1px solid red;
+
+.exa {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 1rem;
 }
-.headerMain{
+
+.headerMain {
   padding-top: 1rem;
-  .imgHead{
+
+  .imgHead {
     cursor: pointer;
     width: 30rem;
   }
 }
-.back1{
-  width: 75%;
+
+.back1 {
+  width: 70%;
   border-radius: 10px;
   background-color: $back;
-  border: 1px solid yellow;
-  .mainMenuSect{
-    border: 1px solid red;
+
+  .mainMenuSect {
     margin: 1rem 0;
-    .h1{
+
+    .h1 {
       padding: 1rem 0;
       font-size: 3rem;
     }
-    .h2{
+
+    .h2 {
       padding: .5rem 0;
-      padding-left: 8rem;
-      font-size: 2rem;
+      text-align: center;
+      font-size: $fontToh2;
       text-decoration: underline;
     }
-    .ok{
+
+    .ok {
       font-weight: 800;
     }
 
-  }
-  .titleBrand{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3rem;
-    .brand{
-      border: 1px solid purple;
-      width: 60%;
-      height: 5rem;
-      .imgslider{
-        height: 100%;
-        width: 100%;
-      }
-    }
 
   }
+
 }
-//2160
-@keyframes deplazamientoDerecha {
-  100%{
-    margin-left: -1820px;
+
+.titleBrand {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+
+  .brand {
+    width: 60%;
+    height: 5rem;
+
+    .imgslider {
+      height: 100%;
+      width: 100%;
+    }
   }
+
+}
+
+.locations {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  //.OnlineStore {}
+
+  .StoreLocations {
+    margin: .5rem 0;
+    width: 100%;
+
+    h2 {
+      font-size: $fontToh2;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .StoreMaps {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      iframe {
+        height: 450px;
+        width: 40%;
+        border: 3px solid aliceblue;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
+.linkStore {
+  height: 30rem;
+  position: relative;
+  gap: 3rem;
+
+  h4 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    height: fit-content;
+    width: fit-content;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(51, 51, 51), rgb(104, 104, 104));
+    color: transparent;
+    border: 2px solid black;
+    border-radius: 3rem;
+    font-size: $fontToh2;
+    padding: .5rem 2rem;
+    -webkit-background-clip: text;
+  }
+
+  .LinkImg {
+    margin: auto auto;
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+
+.Information {
+  h5 {
+    font-size: $fontToh2;
+    padding: .5rem 0;
+    padding-left: 3rem;
+  }
+
+  p {
+    margin-left: 2rem;
+    font-size: $fontToh2 - .5;
+    font-weight: 600;
+  }
+
+  .mainMenuTable {
+    position: relative;
+    margin: .5rem 1rem;
+    border: $borderTable solid black;
+    border-collapse: collapse ;
+      th{
+        border: ($borderTable - 2) solid black;
+        padding: .3rem .5rem;
+      }
+      td{
+        border: ($borderTable - 2) solid black;
+        padding: .3rem .5rem;
+      }
+
+  }
+  div{
+    margin: .5rem 0;
+    text-align: center;
+  }
+}
+.others{
+  .h6{
+    font-size: $fontToh2;
+    padding: .5rem 1rem;
+  }
+  .text-containe{
+    padding: 0 1rem;
+    padding-bottom: .5rem;
+    text-align: justify;
+  }
+}
+
+
+@media(max-width:767px) {
+  .back1 {
+    width: 100%;
+  }
+
 }
