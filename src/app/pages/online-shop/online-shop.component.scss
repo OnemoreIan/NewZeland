@@ -1,0 +1,23 @@
+$back: #f5f5f5;
+$fontToh2: 2rem;
+$borderTable: 5px;
+.esp{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  p{
+    margin-bottom: 1rem;
+    color: white;
+  }
+}
+.contOnline{
+
+  background-color: $back;
+  margin: 2rem 0 .5rem 0;
+  width: 70%;
+  min-height: 100rem;
+  box-shadow: 0 0 5px 3px rgb(57, 57, 57);
+  border: 3px solid gray;
+  border-radius: 5px;
+}

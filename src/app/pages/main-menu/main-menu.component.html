@@ -19,11 +19,10 @@
 
 
       <div class="OnlineStore">
-        <h2 class="h2">Online Store</h2>
+        <h2 class="h2" (click)="shop()">Online Store</h2>
         <div class="">
-          <a href="">
-            <img src="https://okgiftshop.co.nz/wordpress/wp-content/uploads/2010/09/online590.jpg" alt="imagen enlace">
-          </a>
+          <img src="https://okgiftshop.co.nz/wordpress/wp-content/uploads/2010/09/online590.jpg" alt="imagen enlace"
+            (click)="shop()">
         </div>
 
       </div>
@@ -43,10 +42,10 @@
     </section>
 
     <section class="mainMenuSect linkStore">
-      <h4 class="h4">Our Webside</h4>
+      <h4 class="h4" (click)="shop()">Our Webside</h4>
 
       <div class="LinkImg">
-        <img src="../../../assets/imgs/site.jpg" alt="web img">
+        <img src="../../../assets/imgs/site.jpg" alt="web img" (click)="shop()">
       </div>
     </section>
 

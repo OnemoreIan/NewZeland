@@ -3,7 +3,9 @@ $color2: #D3D0CB;
 $color3: #E7E5DF;
 $color4: #000000;
 $color5: #FFEA00;
+$gradiente: linear-gradient(90deg, rgb(0, 0, 0), rgb(26, 26, 26), rgb(26, 26, 26), rgb(0, 0, 0));
 .back{
-  background-color: $color4;
+  //background-color: $color4;
+  background: $gradiente;
   min-height: 100vh;
 }

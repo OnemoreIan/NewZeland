@@ -1,0 +1,34 @@
+<div class="esp">
+  <div class="contOnline">
+    <navOnline></navOnline>
+    <div class="Slider">
+      <img *ngFor="let x of [1,1,1,1,1,1,1]" src="" alt="imagen">
+    </div>
+    <div class="Carrusel">
+      <img *ngFor="let x of [1,1,1,1,1,1,1]" src="" alt="carrusel">
+    </div>
+    <section>
+      <p>New</p>
+      <img *ngFor="let x of [1,1,1,1,1,1,1]" src="" alt="new item">
+    </section>
+    <section>
+      <p>Top products</p>
+      <img *ngFor="let x of [1,1,1,1,1,1,1]" src="" alt="top">
+    </section>
+    <article>
+      <div>
+        <p>Contact Information</p>
+        <span>Email: Order@okgiftshop.co.nz</span>
+      </div>
+      <div *ngFor="let x of lastBrand">
+        <p> {{x.title}} </p>
+        <ul>
+          <li *ngFor="let i of x.options"> {{i}} </li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+  <p>Copyright © 2023 OK Gift Shop New Zealand.</p>
+
+</div>

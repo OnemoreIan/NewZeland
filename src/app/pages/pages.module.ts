@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from './main/main.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SharedModule } from '../shared/shared.module';
+import { OnlineShopComponent } from './online-shop/online-shop.component';
+import { ContentComponent } from './content/content.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { NavOnlineShopComponent } from './online-shop/navOnlineShop/navOnlineShop.component';
 
 
 
 @NgModule({
   declarations: [
-    MainComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    OnlineShopComponent,
+    ContentComponent,
+    NavOnlineShopComponent
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   exports:[
-    MainComponent,
     MainMenuComponent
   ]
 })
